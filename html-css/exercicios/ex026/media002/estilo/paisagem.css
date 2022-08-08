@@ -1,1 +1,8 @@
 /*PAISAGEM*/
+
+body{
+    background-image: url(../img/cev-landscape.jpg);
+    background-position: left bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
