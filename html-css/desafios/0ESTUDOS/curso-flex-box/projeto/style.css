@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 100%;
+    font-family: Roboto, Arial, Helvetica, sans-serif;box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+:root{
+    --verde: #191c03;
+}
+
+/*HEADER*/
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+}
+
+header img {
+    width: 200px;
+}
+
+header a{
+    color: var(--verde);
+    margin: 0px 15px;
+}
+
+header a:first-child{
+    margin-left: 0px;
+}
+
+header a:last-child{
+    margin-right: 0px;
+}
+
+@media(max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    header img{
+        padding-bottom: 10px;
+    }
+}
+/*        */
+/*  HERO  */
+/*        */
+
+#hero{
+    background-image: url(img/hero.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#hero h1{
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+    text-shadow: 0px 0px 20px black;
+}
+
+#hero h3{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 0px 0px 20px black;
+}
+
+#hero #botão{
+    background-color: white;
+    border-radius: 4px;
+    color: var(--verde);
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+
+@media(max-width: 700px){
+    #hero h1{
+        font-size: 2.5rem;
+    }
+    #hero h3{
+        font-size: 1.5rem;
+    }
+}
+/*                   */
+/*  Conheça o HOTEL  */
+/*                   */
+
+#conheça-hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+#conheça-hotel h3{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: var(--verde);
+    text-align: center;
+}
+
+#conheça-hotel p{
+    max-width: 800px;
+    align-items: center;
+    margin-bottom: 35px;
+    text-align: center;
+    color: var(--verde);
+}
+
+#conheça-hotel hr{
+    width: 200px;
+    height: 2px;
+    background-color: var(--verde);
+    margin-bottom: 70px;
+    border: none;
+}
+
+#grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#grid li{
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+#grid li.small{
+    flex-basis: 40%;
+}
+
+#grid li.large{
+    flex-basis: 60%;
+}
+
+@media(max-width: 700px){
+    #grid li.small, #grid li.large{
+        flex-basis: 100%;
+    }
+}
+/*                   */
+/*  caracteristicas  */
+/*                   */
+.caracteristicas{
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.caracteristicas h3{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: white;
+    text-align: center;
+}
+
+.caracteristicas p{
+    max-width: 800px;
+    align-items: center;
+    margin-bottom: 35px;
+    text-align: center;
+    color: white;
+}
+
+.caracteristicas hr{
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.caracteristicas .grid{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.caracteristicas .grid li{
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.caracteristicas .grid li span{
+    color: #c3c63b;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+.caracteristicas .grid li h4{
+    color: #c3c63b;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.caracteristicas .grid li p{
+    color: white;
+}
+/*                   */
+/*    newsletter     */
+/*                   */
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 25px;
+}
+
+.newsletter h3{
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: var(--verde);
+    text-align: center;
+}
+
+.newsletter p{
+    max-width: 800px;
+    align-items: center;
+    margin-bottom: 35px;
+    text-align: center;
+    color: var(--verde);
+}
+
+.newsletter hr{
+    width: 200px;
+    height: 2px;
+    background-color: var(--verde);
+    margin-bottom: 70px;
+    border: none;
+}
+
+.newsletter form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+
+.newsletter form input{
+    padding: 15px;
+    border: 1px solid var(--verde);
+    border-radius: 4px;
+    margin-right: 15px;
+    flex: 1;
+}
+
+.newsletter form button{
+    padding: 15px;
+    background-color: var(--verde);
+    color: white;
+    text-transform: uppercase;
+}
+
+.newsletter form button:hover{
+    cursor: pointer;
+}
+
+@media(max-width: 700px){
+    .newsletter input{
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+}
+/*                   */
+/*      footer       */
+/*                   */
+footer{
+    background-color: var(--verde);
+    padding: 25px;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div a{
+    display: flex;
+    padding: 10px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+

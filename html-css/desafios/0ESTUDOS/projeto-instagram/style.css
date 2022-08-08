@@ -1,0 +1,224 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+a{
+    color: black;
+}
+.opacidade{
+    opacity: 0.5;
+}
+/*
+CONFIG IMG
+*/
+.instagram-logo{
+    margin-top: 8px;
+    width: 103px;
+    height: 36px;
+}
+.navbar img{
+    height: 24px;
+    width: 24px;
+    margin-right: 15px;
+}
+.navbar img:last-child{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+main .main2 .stories img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 2px;
+    border: 2px solid rgb(255, 0, 212);
+}
+
+main .main2 .caixa-user-direita img{
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+}
+.coments div.coments-cima img{
+    height: 24px;
+    width: 24px;
+    margin: 8px;
+}
+/*
+HEADER
+*/
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    margin-bottom: 3vh;
+    border-bottom: 1px solid lightgray;
+}
+
+header form #IDpesquisa{
+    background-color: rgba(211, 211, 211, 0.336);
+    background-image: url(instagram-search.svg);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 15px 10px;
+    height: 28px;
+    width: 19vw;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.caixa-navbar{
+    display: flex;
+}
+/*
+MAIN
+*/
+main{
+    background-color: aliceblue;
+    width: 832px;
+    height: 100vh;
+    margin: auto;
+}
+main .main2{
+    display: flex;
+    background-color: aliceblue;
+    width: 832px;
+    margin: auto;
+}
+main .main3{
+    display: flex;
+    background-color: aliceblue;
+    width: 832px;
+    margin: auto;
+}
+/*
+MAIN STORIES
+*/
+main .main2 .stories{
+    background-color: white;
+    border: 1px solid rgba(211, 211, 211, 0.521);
+    border-radius: 5px;
+    height: 119px;
+    width: 470px;
+}
+
+main .main2 .stories ul{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+main .main2 .stories ul li{
+    display: flex;
+    justify-content: space-around;
+}
+
+main .main2 .stories ul li p{
+    text-align: center;
+    color: black;
+}
+/*
+MAIN USER DIREITA
+*/
+main .main2 section.caixa-user-direita{
+    height: 119px;
+    width: 363px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .main2 section.caixa-user-direita .foto-user{
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-;
+}
+
+main .main2 section.caixa-user-direita .foto-user .nome{
+    margin-left: 10px;
+}
+
+main .main2 section.caixa-user-direita .user-mudar p strong{
+    color: rgb(0, 119, 255);
+}
+/*
+MAIN ROLAGEM FOTO BARRA
+*/
+.rolagem-fotos{
+    width: 470px;
+    margin-top: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: white;
+    border: 1px solid rgba(211, 211, 211, 0.521);
+}
+
+.rolagem-fotos .foto-barra{
+    display: flex;
+    justify-content: space-between;
+    width: 470px;
+}
+
+.rolagem-fotos .foto-barra div.foto-lugar{
+    display: flex;
+    align-items: center;
+}
+
+.rolagem-fotos .foto-barra div > img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 10px;
+}
+/*
+MAIN ROLAGEM FOTO PRINCIPAL
+*/
+.rolagem-fotos div.foto img{
+    width: 468px;
+    height: 587px;
+}
+/*
+MAIN ROLAGEM comentarios
+*/
+.coments div ul{
+    display: flex;
+}
+.coments-cima{
+    display: flex;
+    justify-content: space-between;
+}
+.coments-meio p{
+    padding: 5px;
+}
+.coments-baixo form{
+    display: flex;
+}
+.coments-baixo input#formcoments{
+    padding: 10px;
+    width: 430px;
+    font-size: 1.1em;
+    outline: none;
+}
+.coments-baixo form #formenviar{
+    color: lightskyblue;
+    font-size: 1.3em;
+    width: 90px;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.coments-baixo form img{
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex011</title>
+</head>
+<body>
+    <h1>Mini desafio Guanabara</h1>
+    <p>Nacionalidade:<input type="text" name="nacionalidade" id="idnacionalidade"></p>
+    <input type="submit" value="Enviar" onclick="teste()">
+    <p id="resposta"></p>
+
+    <script>
+        function teste() {
+            nacionalidade = document.getElementById('idnacionalidade').value.toLowerCase()
+            resposta = document.getElementById('resposta')
+            resposta.innerHTML = 'Sua nacionalidade é ' + nacionalidade + '<br>'
+            if (nacionalidade == "brasileiro"){
+                resposta.innerHTML += 'Você nasceu no Brasil!!'
+
+            } else {
+                resposta.innerHTML += 'Você <strong>NÃO</strong> nasceu no Brasil!!'
+            }
+        }
+    </script>
+</body>
+</html>

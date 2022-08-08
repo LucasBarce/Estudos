@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Velocidade do carro <input type="number" name="velocidade" id="idvelocidade">Km/H</p>
+    <div id="resultado">Resultado:</div>
+    <input type="submit" value="Enviar" onclick="calcular()">
+    
+
+    <script>
+        function calcular() {
+            input = document.getElementById('idvelocidade')
+            res = document.getElementById("resultado")
+            velocidade = Number(input.value)
+            res.innerHTML = 'Sua velocidade é de '+velocidade+"Km/H <br>"
+            if (velocidade > 60) {
+                res.innerHTML += 'Passou o limite de velocidade!!!! <br> MULTADO!!!!'
+            } else {
+                res.innerHTML += "Parabéns, você não passou do limite!!!"
+            }
+
+        }
+    </script>
+</body>
+</html>

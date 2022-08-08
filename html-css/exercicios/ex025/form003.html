@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>TESTE DE FORM</h1>
+    <form method="get" autocomplete="on">
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="idnome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+
+        <p>
+            <label for="idmedia">Media</label>
+            <input type="number" name="media" id="idmedia" min="0" max="10" placeholder="0 a 10" value="5" step="0.1">
+        </p>
+
+        <p>
+            <label for="iddia">Dia</label>
+            <input type="date" name="data" id="idata">
+        </p>
+
+        <p>
+            <label for="iddata">Data</label>
+            <input type="month" name="data" id="iddata">
+        </p>
+
+        <label for="idhora">Hora da prova</label>
+        <input type="time" name="hora" id="idhora">
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

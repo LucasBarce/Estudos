@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    overflow: hidden;
+    border: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(190, 225, 255);
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    background-color: rgb(250, 98, 42);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.container{
+    margin: auto;
+    background-color: coral;
+    border-radius: 5px;
+}
+.container *{
+    padding-top: 5px;
+}
+.container input[type="number"]{
+    background-color: rgb(255, 144, 104);
+    border-radius: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+.container button{
+    background-color: rgb(255, 144, 104);
+    border-radius: 5px;
+    font-size: 14px;
+    align-items: center;
+    width: 100%;
+}
+.interacao{
+    text-align: center;
+}
+#imagem{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid black;
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --cor1: #091E70;
+    --cor2: #2B3970;
+    --cor3: #5C7AF2;
+    --cor4: #133FF0;
+    --cor5: #0F32BD;
+    --corlinksNav: #d3d3d336;
+    --fontPadrao: Roboto, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --fontTitulo: 'Cormorant SC', Arial, Helvetica, sans-serif;
+}
+/*
+                HEADER
+*/
+header{
+    height: 100vh;
+    background-image: url(imagens/letodie-header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    border-bottom: 5px solid black;
+    box-shadow: 1px 5px 10px black;
+}
+
+header h1{
+    font-family: var(--fontTitulo);
+    padding-top: 40vh;
+    text-align: center;
+    color: white;
+    font-size: 10vh;
+    text-shadow: 1px 3px 4px black;
+}
+
+header p{
+    font-family: var(--fontPadrao);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 15px;
+}
+/*
+                NAV
+*/
+nav{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 1px solid black;
+
+    padding: 10px;
+
+    color: white;
+    background-color: var(--corlinksNav);
+
+}
+
+nav a:hover{
+    background-color: var(--corlinksNav);
+    border-radius: 20px;
+}
+/*
+                MAIN
+*/
+main{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 5px 10px black;
+}
+/*
+                SECTION
+*/
+section h1{
+    background-color: black;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 10px;
+    font-family: var(--fontPadrao);
+}
+
+section p{
+    width: fit-content;
+    text-align: left;
+    font-family: frases, var(--fontPadrao);
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid black;
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: normal;
+    background-color: rgba(128, 128, 128, 0.308);
+}
+/*
+                frases
+*/
+#frase4{
+    text-align: end;
+    margin-left: auto;
+    color: white;
+}
+
+#frase2{
+    text-align: end;
+    margin-left: auto;
+    color: white;
+}
+/*
+                DIV FRASES
+*/
+div{
+    padding-bottom: 250px;
+    padding-top: 250px;
+    border: 5px solid black;
+    box-shadow: inset 0px 9px 20px black;
+}
+div#imagem1{
+    background-image: url(imagens/letodie01.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div#imagem2{
+    background-image: url(imagens/letodie03.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*
+                FOOTER
+*/
+footer{
+    font-family: var(--fontPadrao);
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --cor1: #091E70;
+    --cor2: #2B3970;
+    --cor3: #5C7AF2;
+    --cor4: #133FF0;
+    --cor5: #0F32BD;
+    --corlinksNav: #d3d3d336;
+    --fontPadrao: Roboto, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --fontTitulo: 'Cormorant SC', Arial, Helvetica, sans-serif;
+}
+/*
+                BODY
+*/
+body{
+    background-image: url(imagens/letodie-header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+/*
+                HEADER
+*/
+header{
+    height: 100vh;
+    background-image: url(imagens/letodie02.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    border-bottom: 5px solid black;
+    box-shadow: 1px 5px 10px black;
+}
+
+header h1{
+    padding-top: 40vh;
+    text-align: center;
+    color: white;
+    font-size: 10vh;
+    text-shadow: 1px 3px 4px black;
+    font-family: var(--fontTitulo);
+}
+
+header p{
+    background-image: url(imagens/letodie02.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: var(--fontPadrao);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 15px;
+}
+/*
+                NAV
+*/
+nav{
+    background-image: url(imagens/letodie02.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 1px solid black;
+
+    padding: 10px;
+
+    color: white;
+    background-color: var(--corlinksNav);
+
+}
+
+nav a:hover{
+    background-color: var(--corlinksNav);
+    border-radius: 20px;
+}
+/*
+                MAIN
+*/
+main{
+    max-width: 600px;
+    margin: auto;
+    height: 700px;
+    background-color: rgba(128, 128, 128, 0.486);
+    box-shadow: 1px 5px 10px black;
+}
+/*
+                ARTICLE
+*/
+article{
+    padding: 10px;
+    font-family: var(--fontPadrao);
+}
+
+article h2{
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: underline;
+
+    padding-bottom: 10px;
+}
+
+article section p{
+    text-indent: 15px;
+    text-align: justify;
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 25px;
+    word-spacing: 4px;
+    color: white;
+}
+/*
+                FOOTER
+*/
+footer{
+    font-family: var(--fontPadrao);
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}

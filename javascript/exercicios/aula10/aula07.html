@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <style>
+        body{
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input#idnumero1, input#idnumero2{
+            height: 20px;
+            width: 40px;
+            font-size: 1.5em;
+        }
+
+        p{
+            padding: 0px;
+            margin: 0px;
+            margin-left: 24%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <label for="numero1">Digite um número:</label>
+    <input type="number" name="numero1" id="idnumero1">
+    <br>
+    <p>+</p>
+    <label for="numero2">Digite outro número:</label>
+    <input type="number" name="numero2" id="idnumero2">
+    <br>
+    <input type="submit" value="somar" onclick="somar()">
+    <div id="resultado">Resultado:</div>
+
+    <script>
+        function somar() {
+            input1 = document.getElementById('idnumero1')
+            input2 = document.getElementById('idnumero2')
+            resultado = document.getElementById('resultado')
+            num1 = Number(input1.value)
+            num2 = Number(input2.value)
+            soma = num1 + num2
+            resultado.innerHTML = 'A soma entre '+num1+' e '+num2+' é igual a '+soma
+        }
+
+        document.write('A soma desses números é ' + soma)
+    </script>
+</body>
+</html>

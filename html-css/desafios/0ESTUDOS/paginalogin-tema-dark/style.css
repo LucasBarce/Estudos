@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#login-esquerda h1{
+    font-size: 4vw;
+    color: #77ffc0;
+}
+
+#login-esquerda img{
+    width: 35vw;
+}
+
+#login-direita{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-caixa{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.568);
+
+}
+
+#login-caixa h1{
+    color: #00ff88;
+    font-weight: 800;
+}
+
+.login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.login input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #514869;
+    color: #f0ffffde;
+    font-size: 1em;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.568);
+    box-sizing: border-box;
+}
+
+.login label{
+    color: #ffffffde;
+    margin-bottom: 10px;
+}
+
+.login input::placeholder{
+    color: #f0ffff95;
+}
+
+#login-botao{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    background-color: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px rgba(65, 156, 126, 0.432);
+}
+
+
+@media only screen and (max-width: 950px){
+    #login{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    main{
+        flex-direction: column;
+    }
+    main h1{
+        display: none;
+    }
+    #login-esquerda{
+        width: 100%;
+        height: auto;
+    }
+
+    #login-direita{
+        width: 100%;
+        height: auto;
+    }
+
+    #login-esquerda img{
+        width: 50vw;
+        margin-bottom: 20px;
+    }
+
+
+}

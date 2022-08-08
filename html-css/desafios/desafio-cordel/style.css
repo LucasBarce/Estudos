@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Panda;
+    src: url(fontes/Chopsic.otf);
+}
+@font-face {
+    font-family: frase;
+    src: url(fontes/BaksoSapi.otf);
+}
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--fontePadrao);
+
+}
+
+:root{
+    --fonteH1: 'Panda';
+    --fontePadrao: 'frase', Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+main{
+    margin: auto;
+    height: 100vh;
+    font-weight: normal;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+}
+
+header h1{
+    background-color: black;
+    color: white;
+    font-family: 'Panda', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 7vw;
+    padding-top: 40px;
+    letter-spacing: 15px;
+    word-spacing: 30px;
+}
+
+header p{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    padding-bottom: 40px;
+}
+
+section{
+    padding: 30px;
+}
+
+.normal p{
+    text-align: start;
+    font-size: 5vw;
+    width: 100%;
+    line-height: 110px;
+}
+
+.imagem{
+    background-color: rgb(255, 255, 255);
+    background-image: url(imagens/tartaruga.jpg);
+    box-shadow: inset 1px 1px 20px 15px black;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagem p{
+    color: white;
+    text-align: end;
+    font-size: 5vw;
+    width: 100%;
+    line-height: 110px;
+}
+
+.imagem2{
+    background-color: rgb(255, 255, 255);
+    background-image: url(imagens/tartaruga2.jpeg);
+    box-shadow: inset 1px 1px 20px 15px black;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagem2 p{
+    color: white;
+    text-align: end;
+    font-size: 5vw;
+    width: 100%;
+    line-height: 110px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

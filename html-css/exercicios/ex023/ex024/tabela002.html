@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS</title>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        col.cNome{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercíxio de tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cNome">
+            <col class="cSexo">
+            <col class="cIdade">
+            <col class="cProfissao">
+        </colgroup>
+
+
+        <caption>CADASTRO</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>Feminino</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Clodoaldo</td>
+            <td>Masculino</td>
+            <td>65</td>
+            <td>Faxineiro</td>
+        </tr>
+        <tr>
+            <td>Joselita</td>
+            <td>Feminino</td>
+            <td>72</td>
+            <td>Aposentada</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>Masculino</td>
+            <td>22</td>
+            <td>Desenvolvedor Web</td>
+        </tr>
+    </table>
+</body>
+</html>
