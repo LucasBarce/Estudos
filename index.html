@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciando em DOM</title>
-    <style>
-        body{
-            background-color: wheat;
-            font-size: 1.3em;
-            font-family: Arial, Helvetica, sans-serif;
-
-        }
-    </style>
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Lucas</title>
 </head>
 <body>
-    <h1>Estudos em DOM</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo usar <strong>DOM</strong> em java script</p>
-    <div id="msg"><a href="">Click em mim</a></div>
-    <script>
-        p1 = document.getElementsByTagName('p')[1]
-        p1.style.color = 'blue'
-        div = document.getElementById('msg')
-        //div.style.background = 'green'
-
-
-        
-    </script>
+    <header>
+        <div class="logo">BARCE</div>
+        <nav>
+            <a href="#">HTML CSS</a>
+            <a href="#">JAVA SCRIPT</a>
+        </nav>
+    </header>
+    <main>
+        <section class="texto">
+            <h1>Olá</h1>
+            <h2>Meu nome é <strong>Lucas Barce</strong> e sou estudante de front-end.</h2>
+            <p>Tenho 18 anos e esse ano, 2022, decidi entrar no mundo de desenvolvimento web.</p>
+            <p>Atualmente tenho feito os cursos do <strong class="link"><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank">Curso em Vídeo</a></strong> e
+            futuramente pretendo entrar em um estágio para me aprofundar mais na profissão.</p>
+        </section>
+        <section class="social">
+            <div class="insta"><a href="https://www.instagram.com/lucastherealgroot/" target="_blank"><img src="estilo/instagram-logo.png" alt=""></a></div>
+            <div class="twitter"><a href="https://twitter.com/therealgroot1" target="_blank"><img src="estilo/twitter-logo.png" alt=""></a></div>
+        </section>
+    </main>
 </body>
 </html>

@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+img{
+    display: block;
+    width: 50px;
+    height: 50px;
+
+}
+
+.link a{
+    color: var(--escuro);
+}
+
+:root{
+    --escuro: #050e21;
+    --claro : white/*#fdcf46*/;
+    --claroAmarelo : #fdcf46a9;
+}
+/**/
+/**/
+/**/
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    background-image: url(/estilo/noite.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header .logo{
+    color: var(--escuro);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+header nav a{
+    font-weight: bolder;
+    font-size: 20px;
+    color: var(--escuro);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+header nav a:hover{
+    color: var(--escuro);
+    transition-duration: 0.3s;
+    background-color: wheat;
+}
+
+main{
+    margin: auto;
+    width: 800px;
+}
+
+main *{
+    color: var(--claro);
+    text-align: start;
+}
+
+main h1{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+main p{
+    padding-top: 10px;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.twitter{
+    width: fit-content;
+    padding: 5px;
+    transition-duration: .5s;
+}
+
+div.twitter:hover{
+    transition-duration: .5s;
+    border-radius: 30px;
+    padding: 5px 20%;
+    background-color: rgb(255, 255, 255);
+}
+
+div.insta{
+    width: fit-content;
+    padding: 5px;
+    transition-duration: .5s;
+}
+
+div.insta:hover{
+    transition-duration: .5s;
+    border-radius: 30px;
+    padding: 5px 20%;
+    background-color: rgb(255, 255, 255);
+}
