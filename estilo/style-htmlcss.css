@@ -10,24 +10,21 @@
     color: white;
 }
 
-img{
-    display: block;
-    width: 50px;
-    height: 50px;
-
-}
-
 .link a{
+    transition-duration: 0.5s;
     color: var(--escuro);
+    font-weight: bold;
     padding: 5px;
 }
 
 .link a:hover{
-    color: var(--escuro);
+    color: white;
     transition-duration: 0.5s;
+    background-color: rgb(243, 199, 116);
+    box-shadow: 0px 0px 5px black;
     border-radius: 10px;
-    background-color: rgb(243, 199, 116)
 }
+
 hr{
     background-color: black;
     height: 1px;
@@ -35,20 +32,17 @@ hr{
     margin: 20px auto;
 }
 
-:root{
-    --escuro: #050e21;
-    --claro : white/*#fdcf46*/;
-    --claroAmarelo : #fdcf46a9;
-}
-/**/
-/**/
-/**/
-body{
+
+/*
+BODY AND HEADER
+*/
+body, html{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: wheat;
+    overflow-x: hidden;
 }
 header{
     display: flex;
@@ -85,50 +79,26 @@ main{
     padding: 10px;
     margin: auto;
     width: 800px;
-}
-
-main *{
-    color: var(--escuro);
-    text-align: start;
-}
-
-main h1{
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-main p{
-    padding-top: 10px;
-}
-
-.social{
+    
     display: flex;
     flex-direction: column;
+}
+/*
+BLOCOS DESAFIO
+*/
+section p{
+    text-align: center;
+}
+
+.bloco-desafio{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
-div.twitter{
-    width: fit-content;
-    padding: 5px;
-    transition-duration: .5s;
-}
-
-div.twitter:hover{
-    transition-duration: .5s;
-    border-radius: 30px;
-    padding: 5px 20%;
-    background-color: rgb(243, 199, 116);
-}
-
-div.insta{
-    width: fit-content;
-    padding: 5px;
-    transition-duration: .5s;
-}
-
-div.insta:hover{
-    transition-duration: .5s;
-    border-radius: 30px;
-    padding: 5px 20%;
-    background-color: rgb(243, 199, 116);
+iframe{
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    border: 1px solid white;
 }
