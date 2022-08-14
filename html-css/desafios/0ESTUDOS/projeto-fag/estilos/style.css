@@ -130,6 +130,8 @@ main .texto h4{
 MAIN / CONTATO
 */
 main .contato{
+    position: sticky;
+    top: 0px;
     padding-top: 50px;
     text-align: center;
     display: flex;
