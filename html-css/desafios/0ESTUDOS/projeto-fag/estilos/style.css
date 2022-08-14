@@ -1,0 +1,236 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/*
+ROOT
+*/
+:root{
+    --verde-escuro:#003c1b;
+    --verde-claro:#00642d;
+}
+
+
+
+
+/*
+BODY
+*/
+body{
+    background-color: #e3e3e3;
+}
+
+/*
+HEADER / NAVBAR
+*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    background-color: var(--verde-escuro);
+    border-bottom: 1px solid white;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .logo h1{
+    color: white;
+    font-size: 1.5em;
+    padding: 0px 20px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header nav ul li{
+    text-align: center;
+    padding: 0px 10px; 
+    border-right: 1px solid white;
+}
+header nav ul li:last-child{
+    border-right: 0px solid white;
+}
+header nav ul li a{
+    transition-duration: .5s;
+    padding: 10px;
+    color: white;
+}
+header nav ul li a:hover{
+    transition-duration: .5s;
+    background-color: var(--verde-claro);
+    border-radius: 20px;
+}
+header .botão button{
+    color: white;
+    border-radius: 10px;
+    background-color: var(--verde-claro);
+    padding: 8px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
+    border: none;
+    border: 2px solid transparent;
+}
+header .botão button:hover{
+    background-color: #01b452;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px white;
+}
+
+@media(max-width: 1150px){
+    header .logo h1{
+        display: none;
+    }
+}
+/*
+trabalhe-conosco
+*/
+.trabalhe-conosco{
+    background-image: linear-gradient(to right, #105b3d 50%, #ec3237 50%)
+}
+.trabalhe-conosco img{
+    max-height: 300px;
+    width: 80vw;
+    display: block;
+    margin: auto;
+}
+/*
+MAIN / TEXTO
+*/
+main{
+    display: flex;
+    align-items: flex-start;
+}
+main .texto{
+    padding: 50px;
+    width: 70vw;
+    background-color: #e3e3e3;
+}
+main .texto li{
+    margin-left: 25px;
+    list-style: circle;
+}
+main .texto p{
+    margin: 30px 0px;
+}
+main .texto h4{
+    color: var(--verde-escuro);
+    font-size: 1.4em;
+    margin: 10px 0px;
+    background-image: linear-gradient(to right, #e3e3e3, #6bf0a7);
+}
+/*
+MAIN / CONTATO
+*/
+main .contato{
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    background-color: #e3e3e3;
+}
+main .contato img{
+    width: 200px;
+    height: 200px;
+}
+main .contato h3{
+    width: 200px;
+    padding: 10px 0px;
+}
+main .contato p{
+    width: 200px;
+    padding: 10px 0px;
+}
+@media (max-width: 792px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .texto{
+        width: 100vw;
+        padding: 10px;
+    }
+    main .contato{
+        padding-top: 0px;
+    }
+
+}
+/*
+FORM
+*/
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding: 0px 50px;
+}
+form input, select{
+    margin: 10px 0px;
+    padding: 10px;
+    width: 500px;
+    border: 0px;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+}
+form input:focus{
+    box-shadow: 0px 0px 10px green;
+    border: none;
+    outline: none;
+}
+form input[type="button"]{
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition-duration: 0.3s;
+}
+form input[type="button"]:hover{
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    transition-duration: 0.2s;
+    cursor: pointer;
+    background-color: #003c1b;
+}
+@media (max-width: 792px){
+    form{
+        display: block;
+        margin: auto;
+        width: 50vw;
+        margin: 0px 10px;
+        padding: 0px 0px;
+    }
+    form input, select{
+        width: 300px;
+    }
+}
+
+/*
+FOOTER
+*/
+footer{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ec3237;
+}
+
+footer img{
+    width: 30vw;
+}
+@media (max-width: 792px){
+    footer{
+        flex-direction: column;
+    }
+    footer p {
+        width: 500px;
+        text-align: center;
+    }
+}
