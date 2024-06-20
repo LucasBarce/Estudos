@@ -1,0 +1,124 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    height: 1200px;
+    width: 80%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0px auto;
+
+}
+
+.esquerda-site{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.teste{
+    display: flex;
+    align-items: flex-start;
+}
+
+.informacoes{
+    display: flex;
+    align-items: flex-start;
+
+    width: 700px;
+}
+
+.esquerda-infos{
+    height: 400px;
+}
+
+.esquerda-infos li{
+    margin: 0px 0px 0px 30px;
+    color: #a86e13;
+}
+
+.esquerda-infos h3{
+    color: green;
+}
+
+.direita-infos{
+    height: 400px;
+}
+
+.direita-infos p{
+    margin: 0px 0px 0px 30px;
+    color: #a86e13;
+}
+
+.direita-infos h3{
+    color: green;
+}
+/*
+direita site
+*/
+
+.direita-site{
+    margin-left: 10px;
+}
+
+.direita-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.144);
+    height: 400px;
+}
+
+.direita-input form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.direita-input form *{
+    margin: 3px;
+}
+
+.direita-input input[type="date"]{
+    border: 1px solid black;
+    padding: 4px;
+}
+
+
+button{
+    background-color: wheat;
+    border: 1px solid black;
+    height: 40px;
+    width: 100%;
+    transition: 0.4s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+span{
+    background-image: url(img/fundo-foto.png);
+    background-position: center;
+    background-size: 200px;
+}
+
+/*
+iframe
+*/
+iframe{
+    width: 300px;
+    height: 170px;
+    margin: 10px;
+}

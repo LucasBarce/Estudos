@@ -1,0 +1,11 @@
+fieldset{
+    padding: 10px;
+}
+
+legend{
+    font-weight: bold;
+}
+
+.radio{
+    margin: 10px;
+}

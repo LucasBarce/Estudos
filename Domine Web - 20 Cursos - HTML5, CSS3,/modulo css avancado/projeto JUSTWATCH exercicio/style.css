@@ -1,0 +1,92 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    
+}
+/*      HEADER      */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0px 5%;
+    padding: 20px;
+
+    background-color: gray;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li a{
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+
+    color: white;
+}
+
+header #shearh-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #10161d;
+    
+}
+
+header #shearh-bar input{
+    width: 474px;
+    height: 38px;
+    
+    outline: none;
+    border: none;
+
+    color: white;
+    background-color: #10161d;
+
+    transition: 1s;
+
+}
+
+header #shearh-bar input:focus{
+    padding-right: 100px;
+    transition: 1s;
+ }
+
+header .material-symbols-outlined{
+    padding: 0px 10px;
+}
+
+header button{
+    padding: 10px 10px;
+    margin-left: 25px;
+
+    border: 1px solid black;
+    background-color: #10161d;
+    color: white;
+    transition: 0.4s;
+}
+
+header button:hover{
+    background-color: #10161d75;
+    cursor: pointer;
+}
+
+
+/*      logo      */
+#logo{
+    width: 219px;
+    height: 32px;
+}

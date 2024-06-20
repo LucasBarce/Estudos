@@ -1,0 +1,65 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+    font-family: "Sedan SC", 'Arial Narrow', Arial, sans-serif;
+    
+    text-decoration: none;
+}
+
+main{
+    height: 100vh;
+    width: 99vw;
+}
+
+main .parte01{
+    width: auto;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #balao{
+    background-image: url(img/imagem1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main #estrada{
+    background-image: url(img/imagem2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main .parte01 h1{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.500);
+
+    padding: 10px;
+
+    font-weight: bold;
+    font-size: 100px;
+}
+
+main .paragrafo01{
+    width: auto;
+    height: 25%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: gray;
+}
+
+
+main .paragrafo01 p{
+    width: 800px;
+}

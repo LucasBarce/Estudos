@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+
+        var nome   = prompt ("Digite seu nome:")
+        var altura = prompt ("Digite sua altura em centimetros:")
+        var peso   = prompt ("Digite seu peso:")
+
+        altura = parseFloat(altura)
+        peso = parseFloat(peso)
+        altura /= 100
+        
+        massa_corporal = peso / (altura * altura)
+        document.write(nome + " sua massa corporal eh de <br/>" + massa_corporal)
+
+        if(massa_corporal < 16){
+                document.write(" vc esta a baixo do peso muito grave")
+        }   if(massa_corporal >= 16 && massa_corporal <= 16.99){
+                document.write(" vc esta a baixo peso grave")
+        }   if(massa_corporal >= 17 && massa_corporal <= 18.49){
+                document.write(" Voce esta a baixo peso")
+        }   if(massa_corporal >= 18.50 && massa_corporal < 24.99){
+                document.write(" Voce esta com Peso normal")
+        }   if(massa_corporal >= 25 && massa_corporal < 29.99){
+                document.write(" Voce esta com Sobrepeso")
+        }   if(massa_corporal >= 30 && massa_corporal < 34.99){
+                document.write(" Voce esta com Obesidade grau I")
+        }   if(massa_corporal >= 35 && massa_corporal < 35.99){
+                document.write(" Voce esta com Obesidade grau II")
+        }   if(massa_corporal > 40){
+                document.write(" Voce esta com Obesidade grau III")
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

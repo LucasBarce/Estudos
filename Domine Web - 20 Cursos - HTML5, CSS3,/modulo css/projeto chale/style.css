@@ -1,0 +1,183 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+header{
+    width: 89vw;
+    height: 250px;
+    margin: auto;
+    margin-bottom: 10px;
+
+    background-image: url(imagens/Untitled\ design.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    min-width: 761px;
+    max-width: 1250px;
+}
+
+.img-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo-esquerda{
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#depoimento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(imagens/topo-imagem-lateral.png);
+    background-repeat: no-repeat;
+    width: 515px;
+    height: 250px;
+}
+
+#depoimento .first{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    padding: 3px 0px;
+
+    width: 320.5px;
+}
+
+#depoimento .first span{
+    font-size: 0.8em;
+    color: #90884c;
+    width: 150px;
+}
+
+#depoimento .first button{
+    font-size: 0.9em;
+    padding: 5px;
+
+    color: white;
+    background-color: #90884c;
+
+    border: none;
+}
+
+#depoimento .first button:hover{
+    color: #ddd291;
+    cursor: pointer;
+    background-color: #90884c;
+}
+
+#depoimento .last{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#depoimento nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#depoimento nav a{
+    padding: 5px;
+
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    color: #90884c;
+
+    transition: 0.2s;
+}
+
+
+#depoimento nav a:hover{
+    background-color: #90884c;
+    color: #ddd291;
+}
+
+/*
+                MAIN
+*/
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 89vw;
+    height: 250px;
+    margin: auto;
+
+    min-width: 761px;
+    max-width: 1250px;
+}
+
+main #esquerda{
+    background-color: #ded9b7;
+    margin: auto;
+    height: 37vh;
+
+    padding: 30px;
+}
+
+main #esquerda p{
+    padding: 10px 0px;
+    background-color: #ded9b7;
+}
+
+
+main #direito{
+    background-color: #efeacc;
+    margin: auto;
+    padding: 30px;
+    height: 37vh;
+}
+
+main #direito img{
+    width: 150px;
+}
+
+main .filho-direito{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    
+}
+
+main .filho-direito:hover{
+    background-color: #90884c;
+    
+}
+
+
+main .filho-direito p{
+    width: 300px;
+    padding-left: 5px;
+}
+
+
+main .filho-direito h4{
+    padding-left: 5px;
+    padding-bottom: 5px;
+    color: #6d673a;
+}

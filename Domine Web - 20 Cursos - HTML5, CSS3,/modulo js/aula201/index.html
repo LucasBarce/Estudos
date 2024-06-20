@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+</head>
+<body>
+    <input 
+    type="text"
+    placeholder="Digite seu nome"
+    id="nome-usuario"
+    class="nome-usuario"
+    name="nome-usuario">
+    <button type="submit" onclick="verifivadorNumeros()">Enviar</button>
+    <hr>
+    <span>Letras:</span>
+    <input type="text" disabled id="letras">
+    <span>Numeros</span>
+    <input type="text" disabled id="numeros">
+
+
+    <!--
+    JAVA SCRIPT
+    -->
+
+    <script>
+        console.log(verifivadorNumeros())
+        function verifivadorNumeros(){
+            var caractere = document.getElementById("nome-usuario").value
+                            document.getElementById("nome-usuario").value = ""
+            caractere.trim()
+            if (caractere =="1" ||
+                caractere == "2" ||
+                 caractere == "3" ||
+                  caractere == "4" ||
+                   caractere == "5" ||
+                    caractere == "6" ||
+                     caractere == "7" ||
+                      caractere == "8" ||
+                       caractere == "9"
+            ){
+                var campo_numeros = document.getElementById("numeros").value = caractere
+                
+            }else{
+                var campo_letras = document.getElementById("letras").value = caractere
+            }
+        }
+  
+       </script>
+</body>
+</html>

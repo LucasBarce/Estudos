@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+/*
+        var num1 = prompt("Digite um valor:")
+        var num2 = prompt("Digite outro valor:")
+        var operacao = prompt("Digite qual opreracao fazer com esses valores:(SOMA, SUBTRACAO, DIVISAO e MULTIPLICACAO)")
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+        operacao = operacao.toLocaleLowerCase()
+    
+        if (operacao == "soma"){
+            var resultado = num1 + num2
+            document.write("O resultado dessa operacao eh: " + resultado)
+        }if (operacao == "subtracao"){
+            var resultado = num1 - num2
+            document.write("O resultado dessa operacao eh: " + resultado)
+        }if (operacao == "divisao"){
+            var resultado = num1 / num2
+            document.write("O resultado dessa operacao eh: " + resultado)
+        }if(operacao == "multiplicacao"){
+            var resultado = num1 * num2
+            document.write("O resultado dessa operacao eh: " + resultado)
+        }
+*/
+        
+        var num1 = prompt("Digite um numero:")
+        var num2 = prompt("Digite outro numero:")
+        var operacao = prompt("Digite a operacao")
+
+        function calc(num1, num2, operacao){
+            num1 = parseInt(num1)
+            num2 = parseInt(num2)
+
+            var resultado = 0
+
+            if (operacao == "soma"){
+                resultado = num1 + num2
+            }if(operacao == "subtracao"){
+                resultado = num1 - num2
+            }
+
+            return resultado
+
+        }
+
+        document.write("O resultado eh:" +calc(num1,num2,operacao))
+
+     </script>
+</head>
+<body>
+
+</body>
+</html>

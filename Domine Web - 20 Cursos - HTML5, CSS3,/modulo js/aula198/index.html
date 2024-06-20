@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+
+    <title>JS</title>
+        <style>
+
+
+
+        </style>
+</head>
+<body>
+    <main>
+        <div id="resultado"></div>
+
+        <div class="calculadora">
+                <div class="numeros">
+                        <div class="horizontal" id="horizontal01">
+                                <button onclick="verificador('9')">9</button>
+                                <button onclick="verificador('8')">8</button>
+                                <button onclick="verificador('7')">7</button>
+                        </div>
+                        <div class="horizontal" id="horizontal02">
+                                <button onclick="verificador('6')">6</button>
+                                <button onclick="verificador('5')">5</button>
+                                <button onclick="verificador('4')">4</button>
+                        </div>
+                        <div class="horizontal" id="horizontal03">
+                                <button onclick="verificador('3')">3</button>
+                                <button onclick="verificador('2')">2</button>
+                                <button onclick="verificador('1')">1</button>
+                        </div>
+                        <div class="horizontal" id="horizontal04">
+                                <button style="width: 100%;" onclick="verificador(0)">0</button>
+                                <button style="width: 100%;" onclick="limpar()">Limpar</button>
+                        </div>
+                </div>
+                <div class="operadores">
+                        <button onclick="operadores('/')">/</button>
+                        <button onclick="operadores('+')">+</button>
+                        <button onclick="operadores('-')">-</button>
+                        <button onclick="operadores('*')">*</button>
+                        <button onclick="calcular()">=</button>
+                </div>
+        </div>
+    </main>
+
+    <!--
+    JAVA SCRIPT
+    -->
+
+        <script>
+                var numero1 = ""
+                var numero2 = ""
+                var soma    = 0
+                var resultado = document.getElementById("resultado")
+                var operador = ""
+
+
+                function verificador(a){
+                        if (operador == ""){
+                                numero1 = numero1 + a  
+                                resultado.innerHTML += a
+                        }else{
+                                numero2 = numero2 + a  
+                                resultado.innerHTML += a
+                        }
+                }
+
+                function operadores(a){
+                        if (numero1 == "" || numero2 == ""){
+                                operador = a
+                                resultado.innerHTML += operador
+                                console.log(operador)
+                                console.log(numero1)
+                                console.log(numero2)
+                        }if(numero1 != "" && numero2 != ""){
+                                if(operador = "+"){
+                                        soma = parseFloat(numero1) + parseFloat(numero2)
+                                        numero1 = soma
+                                        numero2 = 0
+                                        console.log(soma)
+                                        resultado.innerHTML = soma + "+"
+                                }
+                        }
+                }
+
+                function limpar(){
+                        numero1 = ""
+                        numero2 = ""
+                        soma    = 0
+                        operador = ""
+                        resultado.innerHTML = ""
+                }
+
+        </script>
+</body>
+</html>

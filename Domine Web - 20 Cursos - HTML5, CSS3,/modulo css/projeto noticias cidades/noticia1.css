@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paginal-atual{
+    color: rgb(97, 0, 0);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    margin: 0px auto;
+}
+
+main .noticia{
+    background-image: url(img/fundo-caixa.png);
+    padding: 10px;
+}
+
+main .noticia h4{
+    padding: 10px;
+    background-color: #294c71;
+    color: white;
+}
+
+main .noticia h5{
+    width: 15%;
+    padding: 5px;
+
+    margin-top: 10px;
+
+    background-color: red;
+    color: white;
+}
+
+main .noticia img{
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px;
+}
+
+main .noticia p{
+    background-color: white;
+}

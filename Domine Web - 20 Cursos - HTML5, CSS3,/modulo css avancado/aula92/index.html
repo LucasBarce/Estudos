@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing</title>
+    <style>
+        #caixa1{
+            width: 300px;
+            height: 300px;
+            box-sizing: border-box;
+            background-image: url(camera.png);
+        }
+
+        #caixa2{
+            width: 300px;
+            height: 300px;
+            padding: 50px;
+            box-sizing: border-box;
+            background-color: red;
+            background: linear-gradient(50deg, red, rgb(119, 0, 0), orange);
+        }
+
+        #caixa3{
+            width: 300px;
+            height: 300px;
+            padding: 50px;
+            box-sizing: border-box;
+            background-color: red;
+            background: radial-gradient(red, rgb(119, 0, 0));
+        }
+
+        h1{
+            background-color: rgba(255, 255, 255, 0.596);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="caixa1">
+        <h1>opa meu veio</h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab perspiciatis dolores modi, natus unde laboriosam consequatur veritatis laudantium rerum, animi molestiae explicabo. Aliquam, veritatis modi alias consectetur ex quod inventore.
+    </div>
+    <div id="caixa2">
+        opa meu veio
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab perspiciatis dolores modi, natus unde laboriosam consequatur veritatis laudantium rerum, animi molestiae explicabo. Aliquam, veritatis modi alias consectetur ex quod inventore.
+    </div>
+    <div id="caixa3">
+        opa meu veio
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab perspiciatis dolores modi, natus unde laboriosam consequatur veritatis laudantium rerum, animi molestiae explicabo. Aliquam, veritatis modi alias consectetur ex quod inventore.
+    </div>
+</body>
+</html>

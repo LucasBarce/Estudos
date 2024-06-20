@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+/*
+            main
+*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+/*
+            esquerda
+*/
+#esquerda{
+    background-image: url(img/home-phones.png);
+    height: 635px;
+    width: 465px;
+
+}
+/*
+            direita
+*/
+
+#direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+}
+
+#direita #login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+
+    
+    border: 1px solid black;
+
+}
+
+#direita #input form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#direita #input form input{
+    padding: 8px;
+    margin: 5px;
+
+    border: 1px solid rgba(0, 0, 0, 0.096);
+
+    width: 250px;
+}
+
+
+#direita #input form input:focus{
+    border: 1px solid black;
+    outline: none;
+}
+
+/*
+            img
+*/
+
+#insta-logo{
+    width: 175px;
+    height: 51px;
+}
+
+#google-play, #microsoft{
+    width: 134px;
+    height: 40px;
+}
+
+#insta-exe{
+    position: relative;
+    left: 156px;
+    top: 25px;
+}
