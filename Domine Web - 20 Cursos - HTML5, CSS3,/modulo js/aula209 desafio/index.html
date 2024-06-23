@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+</head>
+<body>
+  
+
+
+    <script>
+
+        var listaCompras = []
+        listaCompras = ['Bovina', 'Suina','Maca', 'Laranja']
+        listaCompras.sort()
+
+        listaNumeros = [1, 4, 76, 11, 32, 45]
+        listaNumeros.sort(ordena)
+
+        function ordena(a, b){
+            return a- b
+        }
+
+        console.log(listaCompras)
+        console.log(listaNumeros)
+        console.log(listaCompras.indexOf('Maca'))
+/*
+        //incluir elemento ao final
+        listaCompras.push('Beterraba')
+        //incluir elemento no inicio
+        listaCompras.unshift('Uva')
+        //excluir elemento ao final
+        listaCompras.pop()
+        //excluir elemento ao inicio
+        listaCompras.shift()
+        console.log(listaCompras)
+*/        
+       </script>
+</body>
+</html>
