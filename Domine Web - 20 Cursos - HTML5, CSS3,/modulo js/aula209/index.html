@@ -8,11 +8,44 @@
 </head>
 <body>
   
-
+    <div>
+        
+            <input id="objeto" type="text">
+            <button onclick="adicionar()">Adicionar</button>
+            <button onclick="ordenar()">Ordenar</button>
+       
+    </div>
 
     <script>
 
-        
+        var lista = []
+
+        function adicionar()
+        {
+            objeto = document.getElementById('objeto').value
+            console.log(objeto)
+            if (objeto == '')
+            {
+                alert("Digite um valor")
+            }else
+            {
+                console.log(objeto)
+                if (lista.indexOf(objeto) == -1)
+                {
+                    lista.push(objeto)
+                    document.getElementById('objeto').value = ""
+                    console.log(lista)
+                }else{
+                    alert('Objeto ja esta adicionado na lista')
+                }   
+            }
+        }
+
+        function ordenar()
+        {
+            lista.sort()
+            console.log(lista)
+        }
 
        </script>
 </body>
