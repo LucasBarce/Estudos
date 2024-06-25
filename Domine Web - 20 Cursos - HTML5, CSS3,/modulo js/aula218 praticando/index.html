@@ -8,19 +8,22 @@
 </head>
 <body>
   
-
+    <input id="numero" type="number">
+    <button onclick="tabuada()">Tabuada</button>
 
     <script>
-
-        var lista_frutas = ['Banana', 'Maca', 'Morango', 'Uva']
-
-        console.log(lista_frutas.length)
-
-        var y = 0
-        while (y < lista_frutas.length)
+        function tabuada()
         {
-            document.write(lista_frutas[y] + '<br/>')
-            y++
+            var c = 1
+            console.log('ok')
+            var numero = document.getElementById('numero').value
+            console.log('ok')
+            while(c <= 10)
+            {
+                console.log('ok')
+                document.write(c+'x'+numero+'='+(numero * c)+'<br/>')
+                c++
+            }
         }
 
        </script>
