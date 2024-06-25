@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+
+</head>
+<body>
+  
+    <input id="numero" type="number">
+    <button onclick="tabuada()">Tabuada</button>
+
+    <script>
+        function tabuada()
+        {
+            var c = 1
+            console.log('ok')
+            var numero = document.getElementById('numero').value
+            console.log('ok')
+            while(c <= 10)
+            {
+                console.log('ok')
+                document.write(c+'x'+numero+'='+(numero * c)+'<br/>')
+                c++
+            }
+        }
+
+       </script>
+</body>
+</html>
