@@ -17,10 +17,15 @@
             "Hamilton", "Russel", 'Lando', 'Max', 'Leclerc'
         ]
 
-        for(var x in lista_convidados)
+        lista_convidados.forEach(function(valor, indice, array)
         {
-            document.write(lista_convidados[x]+'<br/>')
-        }
+            console.log(indice)
+            if(valor == "Lando")
+            {
+                lista_convidados[indice] = "Javasca"
+            }
+            console.log(array)
+        })
 
     </script>
 </body>
