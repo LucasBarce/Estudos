@@ -8,21 +8,22 @@
 </head>
 <body>
   
-
+    <button onclick="popup()">Abrir</button>
+    <button onclick="popClose()">Fechar</button>
 
     <script>
 
-        function soma()
+        var janela 
+
+        function popup()
         {
-            var resultado = 0
-            for(var i in arguments)
-            {
-                resultado += arguments[i]                
-            }
-            return resultado
+            janela = window.open('https://www.w3schools.com/jsref/default.asp', 'nova_janela', 'width:200, height:200')
         }
 
-        console.log(soma(7,5,3.2))
+        function popClose()
+        {
+            janela.close()
+        }
 
     </script>
 </body>
