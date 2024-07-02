@@ -13,6 +13,12 @@ ajustaTamanhoTela()
 
 function posicaoRandomica()
 {
+    //remover mosquito anterior caso exista
+    if(document.getElementById('mosquito'))
+        {
+            document.getElementById('mosquito').remove()
+        }
+
     var posicaoX = Math.floor(Math.random() * largura) - 90
     var posicaoY = Math.floor(Math.random() * altura) - 90
 
@@ -25,14 +31,15 @@ function posicaoRandomica()
 
     var mosquito = document.createElement('img')
     mosquito.src = 'imagens/mosca.png'
-    mosquito.className = `mosquito1`
+    mosquito.className = tamanhoAleatorio() + ` ` + ladoAleatorio()
     mosquito.style.left = posicaoX + `px`
     mosquito.style.top = posicaoY + `px`
     mosquito.style.position = `absolute`
+    mosquito.id = `mosquito`
 
     document.body.appendChild(mosquito)
-    tamanhoAleatorio()
 
+    console.log(ladoAleatorio())
 }
 
 function tamanhoAleatorio()
@@ -49,4 +56,17 @@ function tamanhoAleatorio()
                 {
                     return `mosquito3`
                 }
+}
+
+function ladoAleatorio()
+{
+    var lado = Math.floor(Math.random() * 2)
+    
+    if(lado == 0)
+        {
+            return `ladoA`
+        }if(lado == 1)
+            {
+                return `ladoB`
+            }
 }
