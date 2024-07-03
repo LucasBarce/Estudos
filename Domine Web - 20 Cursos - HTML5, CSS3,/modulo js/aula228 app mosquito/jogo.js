@@ -1,7 +1,19 @@
 var altura = 0
 var largura = 0
 var vidas = 1
-var tempo = 2
+var tempo = 20
+var criaMoquitoTempo = 0
+var nivel = window.location.search
+nivel = nivel.replace('?', ' ')
+alert(nivel)
+
+if(nivel === 'normal'){
+    criaMoquitoTempo = 1500
+}if(nivel === 'dificil'){
+    criaMoquitoTempo = 1000
+}if(nivel === 'fallen'){
+    criaMoquitoTempo = 750
+}
 
 function ajustaTamanhoTela()
 {

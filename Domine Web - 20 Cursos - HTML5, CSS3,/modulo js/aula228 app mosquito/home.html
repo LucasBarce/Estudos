@@ -7,6 +7,19 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <script>
+        function iniciarJogo()
+        {
+            var nivel = document.getElementById(`nivel`).value
+            if(nivel == '')
+            {
+                alert('Selecione um nivel')
+                return false
+            }
+            window.location.href = 'index.html?' + nivel
+        }
+    </script>
+
     <title>Vitoria</title>
 </head>
 <body>
@@ -15,13 +28,13 @@
             <div class="coluna">
                 <div class="flex">
                     <img src="imagens/game.png" alt="">
-                    <select class="form-control">
+                    <select class="form-control" id="nivel">
                         <option value="">--Selecione o Nivel--</option>
                         <option value="normal">Normal</option>
                         <option value="dificil">Dificil</option>
                         <option value="fallen">Fallen</option>
                     </select>
-                    <button>Iniciar</button>
+                    <button onclick="iniciarJogo()">Iniciar</button>
                 </div>
             </div>
         </div>
