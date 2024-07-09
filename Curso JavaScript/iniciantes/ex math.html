@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oiie</title>
+</head>
+<body>
+    <h1>O seu numero eh <span id="numero">0</span></h1>
+    <h1>Raiz quadrada <span id="raiz">0</span></h1>
+    <h1>Inteiro ?<span id="inteiro"></span></h1>
+    <h1>Arredondado para baixo <span id="arredondado-baixo">0</span></h1>
+    <h1>Arredondado para cima <span id="arredondado-cima">0</span></h1>
+
+    <div id="texto"></div>
+
+    <script>
+        let numeroDigitado = parseFloat(prompt("Digite um numero:"))
+        let numero = document.getElementById("numero")
+        let texto = document.getElementById('texto')
+        let raiz = document.getElementById('raiz')
+        let inteiro = document.getElementById('inteiro')
+        let arrBaixo = document.getElementById('arredondado-baixo')
+        let arrCima = document.getElementById('arredondado-cima')
+
+        numero.innerHTML = numeroDigitado   
+        texto.innerHTML = `<p>Seu numero mais 2 eh ${numeroDigitado + 2}<p/>`
+        raiz.innerHTML = `${Math.sqrt(numeroDigitado)}`
+        inteiro.innerHTML = '2'
+        arrBaixo.innerHTML = `${Math.floor(numeroDigitado)}`
+        arrCima.innerHTML = `${Math.ceil(numeroDigitado)}`
+        
+        
+
+
+    </script>
+</body>
+</html>

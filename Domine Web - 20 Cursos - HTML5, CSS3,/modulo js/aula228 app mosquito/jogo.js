@@ -4,7 +4,7 @@ var vidas = 1
 var tempo = 20
 var criaMoquitoTempo = 0
 var nivel = window.location.search
-nivel = nivel.replace('?', ' ')
+nivel = nivel.replace('?', '')
 alert(nivel)
 
 if(nivel === 'normal'){
